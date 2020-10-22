@@ -1,7 +1,7 @@
-\documentclass[11pt,a4paper,sans,english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans, details]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\nopagenumbers{}                                 
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\nopagenumbers{}
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 \usepackage[scale=0.75,a4paper]{geometry}
 \usepackage{babel}
@@ -12,58 +12,66 @@
 %----------------------------------------------------------------------------------
 \firstname{Mateusz}
 \familyname{Tracz}
-                             
-\address{Benedykta Polaka 7/55}{02-777 Warszawa}{}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
+
+\address{}{02-777 Warszawa}{}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
 \mobile{605 063 069}                          % optional, remove/comment the line if not wanted
-                            % optional, remove/comment the line if not wanted
+% optional, remove/comment the line if not wanted
 \email{matishadow@gmail.com}                               % optional, remove/comment the line if not wanted
-\homepage{about.me/matishadow}               
 \social[linkedin]{mateusz-tracz-708626121}
 \social[github]{matishadow}
+\homepage{about.me/matishadow}
 \extrainfo{\tikzmark{end}}
 \photo[80pt][0.4pt]{IMG_2458.JPG}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
 \setlength{\hintscolumnwidth}{3cm}
 \begin{document}
-	
-\begin{tikzpicture}[remember picture,overlay]
-\fill[color1!30]
-(current page.north west) rectangle ([yshift=-1cm]current page.east|-{pic cs:end});
-\end{tikzpicture}
-
-\makecvtitle
-\section{Education}
-\cventry{2014--2017}{Bachelor}{Warsaw University of Life Sciences}{Computer Science}{Warsaw}{} 
-\section{Bachelor thesis}
-\cvitem{Title}{Implementation of the service enabling two-step user verification}
-\cvitem{Description}{Easy to use service which can be used by any 
-	online platform, company or institution in order to implement two-factor authentication 
-	in their system.}
-\section{Experience}
-\cventry{09.2017--Present}{Software Developer}{Consafe Logistics}{Warsaw}{}{Development of server application written in C/C++, clients written in C\#, Visual Basic and Bundles
-	Scripting in Python, 
-	Hacking and reverse engineering Core Product in order to proceed with development
-}
-\cventry{02.2017--07.2017}{Junior .Net Developer}{Nexio Management Ltd.}{Warsaw}{}{Development of MVC application in ASP.NET Essential security related tests of ASP.NET application}
-\cventry{06.2016--09.2016}{R\&D Internship}{Billennium}{Warsaw}{WebAPI written in ASP.NET, front end in Typescript with knockoutjs,SQL Server}{}
-\section{Languages}
-\cvitemwithcomment{English}{B2/C1}{}
-\cvitemwithcomment{German}{A1/A2}{}
-\cvitemwithcomment{Swedish}{Learning}{}
-\section{Skills}
-\cvitemwithcomment{Technologies}{C\#, ASP.NET, C++, C, Python, SQL Server, Oracle Database, JavaScript}{}
-\cvitemwithcomment{Tools}{Visual Studio, Resharper, Git, Linux, IntelliJ IDEA, Sublime Tex}{}
-\cvitemwithcomment{Other}{Cryptography, TDD, Scrum}{}
-\newpage
-\section{Certificates}
-\cvitem{British Council}{Cambridge First Certificate in English}
-\cvitem{Sekurak} {Introduction to security}
-\section{Selected Projects}
-\cvitem{PicnicAuth}{Bachelor thesis project, portable library for generating One Time Passwords.}
-\cvitem{Portkable Pass}{Password manager like keypass and a password generator based on HMAC.}
-\cvitem{DoNotGetAngry}{'Do not get angry' game written in python with Qt for distributed systems classes}
-\cvitem{NoRobots}{Simple bank web scraper}
-\section{Interests}
-\cvitem{Information security}{Finding vulnerabilities in existing projects}
-\cvitem{Bass guitar}{Recording bass covers of popular rock songs}
+  \vspace*{-5\baselineskip}
+  \makecvtitle
+  \section{Education}
+  \cventry{2014--2017}{Bachelor}{Warsaw University of Life Sciences}{Computer Science}{Warsaw}{}
+  \section{Bachelor thesis}
+  \cvitem{Title}{Implementation of the service enabling two-step user verification}
+  \cvitem{Description}{Easy to use service which can be used by any
+  online platform, company or institution in order to implement two-factor authentication
+  in their system.}
+  \section{Experience}
+  \cventry{08.2020--Present}{Software Developer}{Netcompany Poland}{Warsaw}{}{
+  Maintaining frontend in Angular
+  Developing WebAPI in .NET Core\\
+  Writing technical documentation using Word, Asciidoctor and Markdown\\
+  Using and implementing many design patters including CQRS, Unit of Work, Generic repositories\\
+  Improving code quality by implementing OpenAPI documentation, database migrations (EF Core), configuration management per environment\\
+  Writing unit tests and refactoring code to be unit testable\\
+  Managing security related issues like OWASP checklist, utilizing BouncyCastle for signature generation or OpenSSL for certificates creation\\
+  }
+  \cventry{09.2017--07.2020}{Software Developer}{Consafe Logistics}{Warsaw}{}{
+  Development of server application written in C/C++, clients written in C\#, Visual Basic and Bundles\\
+  Scripting in Python\\
+  Hacking and reverse engineering Core Product in order to proceed with development
+  }
+  \cventry{02.2017--07.2017}{Junior .Net Developer}{Nexio Management Ltd.}{Warsaw}{}{
+  Development of MVC application in ASP.NET\\
+  Essential security related tests of ASP.NET application
+  }
+  \cventry{06.2016--09.2016}{R\&D Internship}{Billennium}{Warsaw}{WebAPI written in ASP.NET, front end in Typescript with knockoutjs, SQL Server}{}
+  \section{Languages}
+  \cvitemwithcomment{English}{B2/C1}{}
+  \cvitemwithcomment{German}{A1/A2}{}
+  \cvitemwithcomment{Swedish}{Learning}{}
+  \newpage
+  \section{Skills}
+  \cvitemwithcomment{Technologies}{C\#, ASP.NET, .NET Core, C++, C, Python, SQL Server, Oracle Database, JavaScript}{}
+  \cvitemwithcomment{Tools}{Visual Studio, Resharper, Git, IntelliJ IDEA, Sublime Text, Vim}{}
+  \cvitemwithcomment{Other}{Cryptography, TDD, Linux, Scrum}{}
+  \section{Certificates}
+  \cvitem{British Council}{Cambridge First Certificate in English}
+  \cvitem{Sekurak} {Introduction to security}
+  \section{Selected Projects}
+  \cvitem{PicnicAuth}{Bachelor thesis project, portable library for generating One Time Passwords.}
+  \cvitem{Portkable Pass}{Password manager like keypass and a password generator based on HMAC.}
+  \cvitem{DoNotGetAngry}{'Do not get angry' game written in python with Qt for distributed systems classes}
+  \cvitem{NoRobots}{Simple bank web scraper}
+  \section{Interests}
+  \cvitem{Information security}{Finding vulnerabilities in existing projects}
+  \cvitem{Bass guitar}{Recording bass covers of popular rock songs}
 \end{document}
