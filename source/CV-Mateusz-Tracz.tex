@@ -1,0 +1,175 @@
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{minipage}[t]{0.40\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Mateusz}}}}} % First name
+
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Tracz}}}}} % Last name
+
+	\vspace{6pt}
+
+	{\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Warsaw}\\
+	\icon{Phone}{12}{+48 605 063 069}\\
+	\icon{At}{12}{\href{mailto:matishadow@gmail.com}{matishadow@gmail.com}}\\
+\end{minipage}
+\begin{minipage}[t]{0.280\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://about.me/matishadow}{about.me/matishadow}}\\
+	\icon{Github}{12}{\href{https://github.com/matishadow}{github.com/matishadow}}\\
+	\icon{Edit}{12}{\href{https://matishadow-blog.gear.host/}{matishadow-blog.gear.host}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	I am a developer who delights in creating high quality projects.
+	When I develop things I avoid cutting corners, and I try to make them as good as I possibly can. \\
+	Whether it is a simple script to automate something, or a big complicated feature
+	I feel accomplished when things, which I created work.\\
+	I also love breaking things to learn how they work.
+	I like having deep understanding of system on all abstraction levels.
+
+
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{.NET}{100}
+		\baritem{Python}{80}
+		\baritem{SQL}{65}
+		\baritem{JS}{30}
+		\baritem{C}{60}
+		\baritem{x86}{20}
+		\baritem{Any language}{50}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{4/vim, 5/{Visual Studio}, 5/git, 2/Networking, 4/TDD, 6/Rider, 4/Linux, 3/Security, 3/REST, 3/Arduino, 3/RegExp}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{08.2020--12.2020}
+		{Software Developer}
+		{Netcompany Poland}
+		{
+		  Developing WebAPI in .NET Core\\
+		  Writing technical documentation using Word, Asciidoctor and Markdown\\
+		  Implementing design patters including CQRS, Unit of Work, Generic repositories\\
+		  Writing unit tests and refactoring code to be unit testable\\
+		  Managing security related issues like OWASP checklist, utilizing BouncyCastle for signature generation or OpenSSL for certificates creation\\
+		}
+	\entry
+		{09.2017--07.2020}
+		{Software Developer}
+		{Consafe Logistics}
+		{
+		  Development of server application written in C/C++, clients written in C\#, Visual Basic and Bundles\\
+		  Scripting in Python\\
+		  Hacking and reverse engineering Core Product in order to proceed with development
+		}
+	\entry
+		{02.2017--07.2017\\\footnotesize{part time}}
+		{Junior .NET Developer}
+		{Nexio Management Ltd.}
+		{
+		  Development of MVC application in ASP.NET\\
+		  Essential security related tests of ASP.NET application
+		}
+	\entry
+		{06.2016--09.2016}
+		{.NET Internship}
+		{Billennium}
+		{
+		  WebAPI written in ASP.NET, frontend in Typescript with knockoutjs, SQL Server
+		}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2014 -- 2017}
+		{Engineer’s degree}
+		{Warsaw University of Life Sciences}
+		{
+			Engineering of Computer Systems\\
+			Thesis: \it{Implementation of the service enabling two-step user verification}
+		}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+
+	\textbf{Polish} - native\\
+	\textbf{English} - proficient\\
+	\textbf{Spanish} - learning
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Hobbies}
+
+	\textbf{IT Security} - Playing Capture The Flag competitions, finding vulnerabilities in existing projects\\
+	\textbf{Bass guitar} - Recording bass covers of popular rock songs
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Projects}
+
+    
+    
+    
+    
+	\textbf{\href{https://github.com/matishadow/PicnicAuth}{PicnicAuth}} - Library for generating One Time Passwords.\\
+	\textbf{\href{https://github.com/matishadow/portkable-pass}{Portkable Pass}} - Password manager like keypass but without database, based on HMAC.\\
+	\textbf{\href{https://github.com/matishadow/DoNotGetAngry}{DoNotGetAngry}} - Game written in python with Qt for distributed systems classes.\\
+	\textbf{\href{https://github.com/matishadow/NoRobots}{NoRobots}} - Simple bank web scraper.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
